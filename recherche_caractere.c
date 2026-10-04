@@ -1,6 +1,6 @@
 #include <stdio.h>
 
- /*---------------------------------------------------------
+/*---------------------------------------------------------
 Description: recherche un caractère dans une chaine
 et qui retourne la position de sa premiere occurence.
 
