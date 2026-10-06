@@ -80,7 +80,7 @@ int detection_palindrome(char palindrome [])
 int main (void)
 {
 	// ceci est un test avec un palindrome impair
-	char palindrome[] = {"laval"};
+	char palindrome[] = {"a"};
 	printf("Test palindrome laval\n");
 	printf("Resultat attendue : 1\n");
 	printf("Resultat obtenu : %d\n", detection_palindrome(palindrome));
