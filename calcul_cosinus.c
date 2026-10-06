@@ -7,7 +7,7 @@ Auteurs: Éloi Germain (GERE0402)
  ----------------------------------------------------------*/
 
 #include <stdio.h>
-
+#define n 10
 /*---------------------------------------------------------
 Description: calcule la puissance demandée
 
@@ -92,8 +92,6 @@ Postconditions: retourne la valeur du cosinus de l'angle d'entrée.
 ---------------------------------------------------------*/
 double calcul_cos(float angle)
 {
-	// déclarer les variables 
-	const int n = 10;
 	double cos = 1;
 
 	// boucler à coup de 2
