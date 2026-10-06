@@ -61,7 +61,7 @@ int detection_palindrome(char palindrome [])
 	int longueur = chaineLongueur(palindrome);
 	int resultat;
 	// on fait la boucle jusqu'à ce qu'on arrive au milieu du mot. 
-	for (int i = 0; i < longueur/2; i++)
+	for (int i = 0; i <= longueur/2; i++)
 	{
 		/* si les caractères diffèrent, on veut sortir de la boucle 
 		 donc on retourne 0.*/
@@ -80,7 +80,7 @@ int detection_palindrome(char palindrome [])
 int main (void)
 {
 	// ceci est un test avec un palindrome impair
-	char palindrome[] = {"laval"};
+	char palindrome[] = {"a"};
 	printf("Test palindrome laval\n");
 	printf("Resultat attendue : 1\n");
 	printf("Resultat obtenu : %d\n", detection_palindrome(palindrome));

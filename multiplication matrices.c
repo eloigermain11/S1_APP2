@@ -69,7 +69,7 @@ void calcul_matrice (int a[N][N], int b[N][N], int c[N][N])
 			// boucle pour le terme à position variable
 			for (int z = 0; z<N; z++)
 			{
-			c[x][y] = c[x][y] + a[z][y] * b[x][z];
+			c[x][y] = c[x][y] + a[x][z] * b[z][y];
 			}
 		}
 	}
@@ -91,7 +91,7 @@ int main (void)
 	
 	// matrices avec des 0
 	printf("\nTest pour matrices remplies de 0\n");
-	 int d[N][N] = {{1, 2}, {3, 4{}};
+	 int d[N][N] = {{1, 2}, {3, 4}};
 	 int e[N][N] = {{0, 0}, {0, 0}};
 	 int f[N][N] = {{0, 0}, {0, 0}};
 	 int var_attendue2[N][N] = {{0, 0}, {0, 0}};
