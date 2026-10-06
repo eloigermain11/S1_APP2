@@ -34,7 +34,10 @@ void addition_matrices(double matrice_a[m][n], double matrice_b[m][n], double ma
 		{
 			// additionner les deux nombres
 			matrice_resultat[i][j] = matrice_a[i][j] + matrice_b[i][j];
+			// j + 1
 		}
+		
+		// i + 1
 	}
 }
 
