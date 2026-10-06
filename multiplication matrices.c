@@ -74,6 +74,7 @@ void calcul_matrice (int a[N][N], int b[N][N], int c[N][N])
 		}
 	}
 }
+
 int main (void)
 {	
 	// ceci est le test avec la matrice identité

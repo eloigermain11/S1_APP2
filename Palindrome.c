@@ -29,10 +29,11 @@ Postconditions:
 int chaineLongueur (char chaine [])
 {
 	int longueur = 0;
-	/* tant que le caractère dans le tableau n'est pas "\0", on refait 
-	la boucle*/
+	
+	// tant que le caractère dans le tableau n'est pas "\0", on refait la boucle
 	while(chaine[longueur]!='\0')
 		++longueur;
+		
 	return longueur;
 }
 /*----------------------------------------------------------------------
@@ -55,13 +56,12 @@ Postcondtions:
 	- retourne 0 ou 1 en fonction si la chaine est un palindrome
 	- la valeur de Palindrome est inchangée
 ----------------------------------------------------------------------*/
-
 int detection_palindrome(char palindrome [])
 {
 	int longueur = chaineLongueur(palindrome);
 	int resultat;
 	// on fait la boucle jusqu'à ce qu'on arrive au milieu du mot. 
-	for (int i = 0; i < longueur/2; i++)
+	for (int i = 0; i <= longueur/2; i++)
 	{
 		/* si les caractères diffèrent, on veut sortir de la boucle 
 		 donc on retourne 0.*/
@@ -84,21 +84,25 @@ int main (void)
 	printf("Test palindrome laval\n");
 	printf("Resultat attendue : 1\n");
 	printf("Resultat obtenu : %d\n", detection_palindrome(palindrome));
+	
 	// test palindrome pair
 	char palindrome1[] = {"elle"};
 	printf("\nTest palindrome elle\n");
 	printf("Resultat attendue : 1\n");
 	printf("Resultat obtenu : %d\n", detection_palindrome(palindrome1));
+	
 	// test non-palindrome impair
 	char palindrome2[] = {"voiture"};
 	printf("\nTest palindrome voiture\n");
 	printf("Resultat attendue : 0\n");
 	printf("Resultat obtenu : %d\n", detection_palindrome(palindrome2));
+	
 	// test non-palindrome pair
 	char palindrome3[] = {"allo"};
 	printf("\nTest palindrome allo\n");
 	printf("Resultat attendue : 0\n");
 	printf("Resultat obtenu : %d\n", detection_palindrome(palindrome3));
+	
 	return 0;
 }
 

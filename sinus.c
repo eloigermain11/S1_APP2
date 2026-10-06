@@ -101,6 +101,7 @@ double calcul_sinus(float x)
 int main(void)
 {
 	printf("Tests pour la validation\n");
+	
 	// ceci est un test avec la valeur de pi/2.
 	double sinus = 0;
 	float x = 1.57080;	
@@ -108,6 +109,7 @@ int main(void)
 	printf("Test pour pi/2\n");
 	printf("valeur attendue : 1\n");
 	printf("valeur obtenue: %f\n", sinus);
+	
 	// test avec 1
 	sinus = 0;
 	x = 1;	
@@ -115,6 +117,7 @@ int main(void)
 	printf("\nTest pour 1\n");
 	printf("valeur attendue : 0.8415\n");
 	printf("valeur obtenue : %f\n", sinus);
+	
 	// test avec 0
 	sinus = 0;
 	x = 0;	
@@ -122,6 +125,7 @@ int main(void)
 	printf("\nTest pour 0\n");
 	printf("valeur attendue : 0\n");
 	printf("valeur obtenue: %f\n", sinus);
+	
 	// test avec pi/4
 	sinus = 0;
 	x = 0.78540;	
@@ -130,8 +134,11 @@ int main(void)
 	printf("valeur attendue : 0.7071\n");
 	printf("valeur obtenue : %f\n", sinus);
 	
+	
+	
 	//test plan de test
 	printf("\nTests plan de test\n");
+	
 	//test avec pi
 	sinus = 0;
 	x = 3.14159;
@@ -139,6 +146,7 @@ int main(void)
 	printf("\nTest pour pi\n");
 	printf("valeur attendue: 0\n");
 	printf("Valeur obtenue : %f", sinus);
+	
 	// test avec -pi/2
 	sinus = 0;
 	x = -1.5780;	
@@ -146,6 +154,7 @@ int main(void)
 	printf("\nTest pour -pi/2\n");
 	printf("valeur attendue : -1\n");
 	printf("valeur obtenue: %f\n", sinus);
+	
 	//test pour -pi
 	sinus = 0;
 	x = -3.14159;	
@@ -153,6 +162,7 @@ int main(void)
 	printf("\nTest pour -pi\n");
 	printf("valeur attendue : 0\n");
 	printf("valeur obtenue: %f\n", sinus);
+	
 	// test pour -pi/4
 	sinus = 0;
 	x = -0.78540;	
